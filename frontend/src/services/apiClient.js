@@ -1,12 +1,8 @@
 let detectedUrl = '/api';
 if (typeof window !== 'undefined' && window.location && window.location.hostname) {
   const hostname = window.location.hostname;
-  if (hostname.includes('.onrender.com')) {
-    const baseServiceName = hostname.split('.onrender.com')[0];
-    if (baseServiceName.includes('-frontend')) {
-      const backendServiceName = baseServiceName.replace('-frontend', '-backend');
-      detectedUrl = `https://${backendServiceName}.onrender.com/api`;
-    }
+  if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
+    detectedUrl = 'https://nakama-backend-3wci.onrender.com/api';
   }
 }
 
