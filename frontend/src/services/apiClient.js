@@ -3,14 +3,15 @@ if (typeof window !== 'undefined' && window.location && window.location.hostname
   const hostname = window.location.hostname;
   if (hostname.includes('.onrender.com')) {
     const baseServiceName = hostname.split('.onrender.com')[0];
-    if (baseServiceName.endsWith('-frontend')) {
-      const backendServiceName = baseServiceName.replace(/-frontend$/, '-backend');
+    if (baseServiceName.includes('-frontend')) {
+      const backendServiceName = baseServiceName.replace('-frontend', '-backend');
       detectedUrl = `https://${backendServiceName}.onrender.com/api`;
     }
   }
 }
 
 export const BASE_URL = import.meta.env.VITE_API_URL || detectedUrl;
+console.log('[API_CLIENT] Using API Base URL:', BASE_URL);
 
 export function getHeaders() {
   const token = localStorage.getItem('token');
