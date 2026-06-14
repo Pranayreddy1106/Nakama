@@ -1,4 +1,16 @@
-export const BASE_URL = import.meta.env.VITE_API_URL || '/api';
+let detectedUrl = '/api';
+if (typeof window !== 'undefined' && window.location && window.location.hostname) {
+  const hostname = window.location.hostname;
+  if (hostname.includes('.onrender.com')) {
+    const baseServiceName = hostname.split('.onrender.com')[0];
+    if (baseServiceName.endsWith('-frontend')) {
+      const backendServiceName = baseServiceName.replace(/-frontend$/, '-backend');
+      detectedUrl = `https://${backendServiceName}.onrender.com/api`;
+    }
+  }
+}
+
+export const BASE_URL = import.meta.env.VITE_API_URL || detectedUrl;
 
 export function getHeaders() {
   const token = localStorage.getItem('token');
@@ -12,7 +24,24 @@ export function getHeaders() {
 }
 
 export async function handleResponse(res) {
-  const data = await res.json();
+  let data;
+  const contentType = res.headers.get('content-type');
+  if (contentType && contentType.includes('application/json')) {
+    try {
+      data = await res.json();
+    } catch (e) {
+      const text = await res.text();
+      data = { message: text || `HTTP error ${res.status}: ${res.statusText}` };
+    }
+  } else {
+    try {
+      const text = await res.text();
+      data = { message: text || `HTTP error ${res.status}: ${res.statusText}` };
+    } catch (e) {
+      data = { message: `HTTP error ${res.status}: ${res.statusText}` };
+    }
+  }
+
   if (!res.ok) {
     throw new Error(data.message || 'Operation failed');
   }

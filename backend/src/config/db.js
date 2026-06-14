@@ -135,28 +135,6 @@ class LocalDatabase {
       this.mongoConnected = true;
       console.log(`[MONGO] Successfully connected to MongoDB Atlas!`);
       
-      // Perform database cleanup of legacy seeded/mock users
-      const usersCol = this.mdb.collection('users');
-      const deleteResult = await usersCol.deleteMany({
-        email: { 
-          $nin: [
-            'admin@forum.com', 
-            'pranayreddy1116@gmail.com'
-          ] 
-        }
-      });
-      console.log(`[CLEANUP] Wiped ${deleteResult.deletedCount} legacy test/seeded users from Atlas.`);
-
-      // Clean up orphaned posts, comments and mood logs from deleted test accounts
-      const remainingUsers = await usersCol.find({}).toArray();
-      const validUserIds = remainingUsers.map(u => u.id).filter(Boolean);
-      
-      if (validUserIds.length > 0) {
-        await this.mdb.collection('posts').deleteMany({ user: { $nin: validUserIds } });
-        await this.mdb.collection('comments').deleteMany({ user: { $nin: validUserIds } });
-        await this.mdb.collection('moodEntries').deleteMany({ user: { $nin: validUserIds } });
-      }
-
       // Hydrate local cache
       await this.hydrateFromMongo();
     } catch (err) {
