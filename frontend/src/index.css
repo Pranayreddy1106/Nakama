@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+
+  /* Elevating Slate to the extreme-premium black-zinc scale from the Sophisticated Dark template */
+  --color-slate-950: #0c0c0e; /* Deepest dark sidebar/asides */
+  --color-slate-900: #09090b; /* Main canvas viewport body */
+  --color-slate-850: #111113; /* Primary card background */
+  --color-slate-800: #1c1c1f; /* Elegant subtle thin border */
+  --color-slate-750: #141416; /* Clean list items */
+  --color-slate-700: #27272a; /* Muted badges */
+  --color-slate-600: #3f3f46; /* Control borders */
+  --color-slate-500: #71717a; /* Subtitles */
+  --color-slate-400: #e4e4e7; /* Primary readable text (zinc-300/400) */
+  --color-slate-300: #f4f4f5; /* Light highlighted text */
+  --color-slate-200: #ffffff; /* Intense headers */
+  --color-slate-100: #ffffff;
+
+  /* Remapping Teals to beautiful calming ocean-teals */
+  --color-teal-500: #14b8a6; /* teal-500 */
+  --color-teal-400: #2dd4bf; /* teal-400 */
+  --color-teal-300: #5eead4; /* teal-300 */
+  --color-teal-600: #0d9488; /* teal-600 */
+  --color-teal-700: #0f766e; /* teal-700 */
+  --color-teal-200: #99f6e4;
+  --color-teal-100: #ccfbf1;
+  --color-teal-50:  #f0fdfa;
+
+  /* Remapping Sky to soft elegant sky-blue */
+  --color-sky-500: #0ea5e9; /* sky-500 */
+  --color-sky-400: #38bdf8; /* sky-400 */
+  --color-sky-300: #7dd3fc; /* sky-300 */
+  --color-sky-600: #0284c7; /* sky-600 */
+}
+
+/* Base custom styles to reinforce the curated design concept */
+:root {
+  --theme-bg: #09090b;
+  --theme-color: #e4e4e7;
+}
+
+:root.light {
+  --theme-bg: #f8fafc;
+  --theme-color: #1e293b;
+
+  --color-slate-950: #ffffff;
+  --color-slate-900: #f8fafc; /* Slate-50 canvas */
+  --color-slate-850: #ffffff; /* White cards */
+  --color-slate-800: #e2e8f0; /* slate-200 borders */
+  --color-slate-750: #f1f5f9; /* slate-100 list items */
+  --color-slate-700: #cbd5e1; /* slate-300 badges */
+  --color-slate-600: #94a3b8; /* slate-400 borders */
+  --color-slate-500: #64748b; /* slate-500 subtitles */
+  --color-slate-400: #1e293b; /* slate-800 body text */
+  --color-slate-300: #334155; /* slate-700 subtitle text */
+  --color-slate-200: #0f172a; /* slate-900 headers */
+  --color-slate-100: #0f172a; /* intense white headers to deep dark */
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-color);
+  font-family: "Inter", system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, .serif-display-title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  letter-spacing: -0.02em;
+}
+
+/* Soft ambient glow effect for premium custom borders matching the Sophisticated template */
+.boundary-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+}
+
+/* Custom scrollbar formatting to match Sophisticated template */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1f;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #27272a;
+}

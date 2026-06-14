@@ -1,0 +1,450 @@
+{
+  "users": [
+    {
+      "id": "use_0mkfronp7_1781430067979",
+      "createdAt": "2026-06-14T09:41:07.979Z",
+      "email": "admin@forum.com",
+      "password": "$2b$10$MYSg9ka2qZ94sRTdBfUjeOXEPFWmtoruJZNmcYRYFVZmXQIac0SN6",
+      "username": "MentalHealthGuardian",
+      "avatarSeed": "MentalHealthGuardian",
+      "joinDate": "2026-06-14T09:41:07.979Z",
+      "moodStreak": 3,
+      "badges": [
+        "Community Helper"
+      ],
+      "postsCount": 0,
+      "commentsCount": 0,
+      "savedPosts": [],
+      "points": 0,
+      "isAdmin": true,
+      "verified": true,
+      "updatedAt": "2026-06-14T10:24:27.183Z"
+    },
+    {
+      "id": "use_ci1tleqm5_1781430083693",
+      "createdAt": "2026-06-14T09:41:23.693Z",
+      "email": "pranayreddy1116@gmail.com",
+      "password": "$2b$10$hk8sa.yThjOq1TFIZQYfbu6V5CQoJ2QO2fP.X/QmyX1JehwcQJwum",
+      "username": "HopefulRobin915",
+      "avatarSeed": "HopefulRobin915",
+      "joinDate": "2026-06-14T09:41:23.693Z",
+      "moodStreak": 1,
+      "badges": [
+        "First Step",
+        "Gratitude Champion",
+        "First Post",
+        "First Comment"
+      ],
+      "postsCount": 1,
+      "commentsCount": 1,
+      "savedPosts": [
+        "pos_r1v7urs3h_1781430867846"
+      ],
+      "points": 32,
+      "isAdmin": false,
+      "verified": true,
+      "verificationCode": null,
+      "updatedAt": "2026-06-14T14:17:13.156Z"
+    },
+    {
+      "id": "use_o41jthn57_1781444777087",
+      "createdAt": "2026-06-14T13:46:17.087Z",
+      "email": "reddy@gmail.com",
+      "password": "$2b$10$wZN7BuvSiipU6rHwGhdYFONTAr730JFC8LuO0OUnyC.CG90e5KnUC",
+      "username": "KindPanda904",
+      "avatarSeed": "KindPanda904",
+      "joinDate": "2026-06-14T13:46:17.087Z",
+      "moodStreak": 0,
+      "badges": [
+        "First Comment",
+        "Gratitude Champion"
+      ],
+      "postsCount": 0,
+      "commentsCount": 1,
+      "savedPosts": [],
+      "points": 15,
+      "isAdmin": false,
+      "verified": true,
+      "verificationCode": null,
+      "updatedAt": "2026-06-14T13:47:06.640Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "pos_fjggu965c_1781445990324",
+      "createdAt": "2026-06-14T14:06:30.324Z",
+      "title": "Sometimes i wish id let him do more ",
+      "content": "when i was a kid i got brutally molested my my unc but i kinda liked it and wish he did it more often ",
+      "anonymous": true,
+      "username": "HopefulRobin915",
+      "avatarSeed": "HopefulRobin915",
+      "moodTag": "Calm",
+      "category": "Family Issues",
+      "supportCount": 1,
+      "commentCount": 1,
+      "reportCount": 0,
+      "views": 3,
+      "user": "use_ci1tleqm5_1781430083693",
+      "supportedBy": [
+        "use_ci1tleqm5_1781430083693"
+      ],
+      "updatedAt": "2026-06-14T14:06:40.971Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "com_21bvsp417_1781446000940",
+      "createdAt": "2026-06-14T14:06:40.940Z",
+      "post": "pos_fjggu965c_1781445990324",
+      "user": "use_ci1tleqm5_1781430083693",
+      "username": "HopefulRobin915",
+      "avatarSeed": "HopefulRobin915",
+      "content": "nah wtf\n",
+      "replies": []
+    }
+  ],
+  "moodEntries": [
+    {
+      "id": "moo_uo4i3a7e9_1781430217855",
+      "createdAt": "2026-06-14T09:43:37.855Z",
+      "user": "use_ci1tleqm5_1781430083693",
+      "mood": "Lonely",
+      "note": "Initial support checkin",
+      "date": "2026-06-14",
+      "wellnessScore": 30,
+      "updatedAt": "2026-06-14T09:43:46.024Z"
+    }
+  ],
+  "gratitudes": [
+    {
+      "id": "gra_vv4nj7qax_1781444820417",
+      "createdAt": "2026-06-14T13:47:00.417Z",
+      "user": "use_o41jthn57_1781444777087",
+      "username": "KindPanda904",
+      "avatarSeed": "KindPanda904",
+      "content": "my unc touched me",
+      "dateOnly": "2026-06-14",
+      "supportCount": 1,
+      "supportedBy": [
+        "use_ci1tleqm5_1781430083693"
+      ],
+      "updatedAt": "2026-06-14T14:00:05.198Z"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "title": "7-Day Meditation Challenge",
+      "description": "Take 5-10 minutes every day to sit in quiet mindfulness.",
+      "days": 7,
+      "points": 50,
+      "badge": "Mindfulness Master"
+    },
+    {
+      "id": "c2",
+      "title": "Daily Walk Challenge",
+      "description": "Take a restorative 30-minute walk outside daily to clear your mind.",
+      "days": 10,
+      "points": 50,
+      "badge": "Wellness Walker"
+    },
+    {
+      "id": "c3",
+      "title": "Hydration Challenge",
+      "description": "Drink at least 8 glasses of water every day to support brain health.",
+      "days": 5,
+      "points": 30,
+      "badge": "Hydrated Soul"
+    },
+    {
+      "id": "c4",
+      "title": "Gratitude Challenge",
+      "description": "Post at least one thing you are grateful for on the Gratitude Wall every day.",
+      "days": 7,
+      "points": 50,
+      "badge": "Gratitude Champion"
+    },
+    {
+      "id": "c5",
+      "title": "Sleep Improvement Challenge",
+      "description": "Log off from all screens by 10 PM and aim for 8 hours of sleep.",
+      "days": 7,
+      "points": 50,
+      "badge": "Zen Sleeper"
+    }
+  ],
+  "userChallenges": [
+    {
+      "id": "use_hg4ciaab0_1781444825280",
+      "createdAt": "2026-06-14T13:47:05.280Z",
+      "user": "use_o41jthn57_1781444777087",
+      "challenge": "c2",
+      "progress": 1,
+      "status": "joined",
+      "lastCompletedDate": "2026-06-14",
+      "updatedAt": "2026-06-14T13:47:06.638Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not_ajdmciy05_1781444799888",
+      "createdAt": "2026-06-14T13:46:39.888Z",
+      "recipient": "use_ci1tleqm5_1781430083693",
+      "sender": "use_o41jthn57_1781444777087",
+      "senderUsername": "KindPanda904",
+      "type": "comment",
+      "postId": "pos_r1v7urs3h_1781430867846",
+      "postTitle": "is it really worth living?",
+      "message": "shared a encouraging comment on your support post.",
+      "read": true,
+      "updatedAt": "2026-06-14T13:48:03.529Z"
+    },
+    {
+      "id": "not_i5g3ozfdn_1781444839047",
+      "createdAt": "2026-06-14T13:47:19.047Z",
+      "recipient": "use_ci1tleqm5_1781430083693",
+      "sender": "system",
+      "senderUsername": "System",
+      "type": "match",
+      "postId": "",
+      "postTitle": "Academic Stress",
+      "message": "invited you to an anonymous conversation! Chat room opened.",
+      "read": true,
+      "updatedAt": "2026-06-14T13:47:59.574Z"
+    },
+    {
+      "id": "not_ca4m39y6a_1781445358142",
+      "createdAt": "2026-06-14T13:55:58.142Z",
+      "recipient": "use_o41jthn57_1781444777087",
+      "sender": "system",
+      "senderUsername": "System",
+      "type": "match",
+      "postId": "",
+      "postTitle": "Academic Stress",
+      "message": "invited you to an anonymous conversation! Chat room opened.",
+      "read": false
+    }
+  ],
+  "chatRooms": [
+    {
+      "id": "cr_general",
+      "name": "General Support",
+      "category": "General Support",
+      "activeUsersCount": 15
+    },
+    {
+      "id": "cr_students",
+      "name": "Students & Academics",
+      "category": "Academic Pressure",
+      "activeUsersCount": 8
+    },
+    {
+      "id": "cr_career",
+      "name": "Career Opportunities & Stress",
+      "category": "Career Concerns",
+      "activeUsersCount": 6
+    },
+    {
+      "id": "cr_anxiety",
+      "name": "Anxiety Support Circle",
+      "category": "Social Anxiety",
+      "activeUsersCount": 12
+    },
+    {
+      "id": "cr_relationships",
+      "name": "Relationships Advice",
+      "category": "Relationships",
+      "activeUsersCount": 9
+    },
+    {
+      "id": "cr_wellness",
+      "name": "Wellness Discussions",
+      "category": "Self Improvement",
+      "activeUsersCount": 5
+    },
+    {
+      "id": "match_b_d63awm42u",
+      "createdAt": "2026-06-14T10:22:52.277Z",
+      "name": "Peer Guidance (Academic Stress)",
+      "category": "Academic Stress",
+      "_type": "peer_match",
+      "topic": "Academic Stress",
+      "userA": "use_0mkfronp7_1781430067979",
+      "userA_name": "MentalHealthGuardian",
+      "userB": "bot_partner",
+      "userB_name": "QuietCat404",
+      "activeUsersCount": 2
+    },
+    {
+      "id": "match_a1gyxyg2i",
+      "createdAt": "2026-06-14T13:47:19.044Z",
+      "name": "Crew dialogue (Academic Stress)",
+      "category": "Academic Stress",
+      "_type": "peer_match",
+      "topic": "Academic Stress",
+      "userA": "use_o41jthn57_1781444777087",
+      "userA_name": "KindPanda904",
+      "userB": "use_ci1tleqm5_1781430083693",
+      "userB_name": "HopefulRobin915",
+      "activeUsersCount": 2
+    },
+    {
+      "id": "match_11jweqwqz",
+      "createdAt": "2026-06-14T13:55:58.139Z",
+      "name": "Crew dialogue (Academic Stress)",
+      "category": "Academic Stress",
+      "_type": "peer_match",
+      "topic": "Academic Stress",
+      "userA": "use_0mkfronp7_1781430067979",
+      "userA_name": "MentalHealthGuardian",
+      "userB": "use_o41jthn57_1781444777087",
+      "userB_name": "KindPanda904",
+      "activeUsersCount": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": "mes_nhspne063_1781432572277",
+      "createdAt": "2026-06-14T10:22:52.277Z",
+      "chatRoom": "match_b_d63awm42u",
+      "senderUsername": "Compassion Bot",
+      "senderAvatar": "system",
+      "text": "Partner found! You are now speaking with helper QuietCat404 regarding your interest: \"Academic Stress\". Share safely under anonymous identities."
+    },
+    {
+      "id": "mes_0kv18xhfv_1781432572277",
+      "createdAt": "2026-06-14T10:22:52.277Z",
+      "chatRoom": "match_b_d63awm42u",
+      "senderUsername": "QuietCat404",
+      "senderAvatar": "QuietCat404",
+      "text": "Hey there! Thank you for matching. I also struggle with \"Academic Stress\" from time to time. Tell me, how are you dealing with it today?"
+    },
+    {
+      "id": "mes_zv454if1y_1781444839045",
+      "createdAt": "2026-06-14T13:47:19.045Z",
+      "chatRoom": "match_a1gyxyg2i",
+      "senderUsername": "Compassion Bot",
+      "senderAvatar": "system",
+      "text": "Ship matching successful! Hello KindPanda904 and HopefulRobin915. You are now connected in complete privacy regarding: \"Academic Stress\". Share support, listen, and stay safe."
+    },
+    {
+      "id": "mes_u4r1d5i9s_1781444839046",
+      "createdAt": "2026-06-14T13:47:19.046Z",
+      "chatRoom": "match_a1gyxyg2i",
+      "senderUsername": "HopefulRobin915",
+      "senderAvatar": "HopefulRobin915",
+      "text": "Hi there companion! Thank you for inviting me to chat about Academic Stress. How are you feeling today?"
+    },
+    {
+      "id": "mes_dok10xj8z_1781444845413",
+      "createdAt": "2026-06-14T13:47:25.413Z",
+      "chatRoom": "match_a1gyxyg2i",
+      "senderId": "use_o41jthn57_1781444777087",
+      "senderUsername": "KindPanda904",
+      "senderAvatar": "KindPanda904",
+      "text": "sup homie"
+    },
+    {
+      "id": "mes_8swkehob7_1781444897806",
+      "createdAt": "2026-06-14T13:48:17.806Z",
+      "chatRoom": "match_a1gyxyg2i",
+      "senderId": "use_ci1tleqm5_1781430083693",
+      "senderUsername": "HopefulRobin915",
+      "senderAvatar": "HopefulRobin915",
+      "text": "yooo "
+    },
+    {
+      "id": "mes_bg0dgijln_1781444902306",
+      "createdAt": "2026-06-14T13:48:22.306Z",
+      "chatRoom": "match_a1gyxyg2i",
+      "senderId": "use_ci1tleqm5_1781430083693",
+      "senderUsername": "HopefulRobin915",
+      "senderAvatar": "HopefulRobin915",
+      "text": "its working"
+    },
+    {
+      "id": "mes_q06z40mkd_1781445358140",
+      "createdAt": "2026-06-14T13:55:58.140Z",
+      "chatRoom": "match_11jweqwqz",
+      "senderUsername": "Compassion Bot",
+      "senderAvatar": "system",
+      "text": "Ship matching successful! Hello MentalHealthGuardian and KindPanda904. You are now connected in complete privacy regarding: \"Academic Stress\". Share support, listen, and stay safe."
+    },
+    {
+      "id": "mes_yqaqc1uki_1781445358141",
+      "createdAt": "2026-06-14T13:55:58.141Z",
+      "chatRoom": "match_11jweqwqz",
+      "senderUsername": "KindPanda904",
+      "senderAvatar": "KindPanda904",
+      "text": "Hi there companion! Thank you for inviting me to chat about Academic Stress. How are you feeling today?"
+    },
+    {
+      "id": "mes_excq0usae_1781445358149",
+      "createdAt": "2026-06-14T13:55:58.149Z",
+      "chatRoom": "match_11jweqwqz",
+      "senderId": "use_0mkfronp7_1781430067979",
+      "senderUsername": "MentalHealthGuardian",
+      "senderAvatar": "MentalHealthGuardian",
+      "text": "Hello, this is a test supportive message!"
+    }
+  ],
+  "reports": [],
+  "badges": [
+    {
+      "name": "First Post",
+      "description": "Shared your first supportive post on the forum.",
+      "icon": "PenTool"
+    },
+    {
+      "name": "First Comment",
+      "description": "Offered encouragement or advice to another member.",
+      "icon": "MessageSquare"
+    },
+    {
+      "name": "Helpful Member",
+      "description": "Earned 20+ points from supportive activities.",
+      "icon": "Award"
+    },
+    {
+      "name": "Supportive Listener",
+      "description": "Offered positive feedback on 5+ other members' posts.",
+      "icon": "Heart"
+    },
+    {
+      "name": "Gratitude Champion",
+      "description": "Shared a gratitude post on the Gratitude Wall.",
+      "icon": "Sun"
+    },
+    {
+      "name": "7-Day Streak",
+      "description": "Completed a 7-day solid mood tracking or journaling streak.",
+      "icon": "Flame"
+    },
+    {
+      "name": "30-Day Streak",
+      "description": "Maintained mood tracking or journals for 30 consecutive days.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "name": "Community Helper",
+      "description": "Made 10+ comment replies to general discussion boards.",
+      "icon": "Users"
+    },
+    {
+      "name": "Wellness Warrior",
+      "description": "Completed at least one Community Challenge successfully.",
+      "icon": "Trophy"
+    }
+  ],
+  "peerMatches": [
+    {
+      "id": "pee_idsy9mbze_1781432567274",
+      "createdAt": "2026-06-14T10:22:47.274Z",
+      "user": "use_0mkfronp7_1781430067979",
+      "username": "MentalHealthGuardian",
+      "topic": "Academic Stress",
+      "status": "matched",
+      "updatedAt": "2026-06-14T10:22:52.276Z"
+    }
+  ]
+}
